@@ -1,0 +1,74 @@
+<ion-content>
+  <div class="main_content_div">
+      <ion-buttons slot="start" class="menu_btn">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+
+  <div class="user_div">
+      <div class="first_div">
+          <ion-label class="welcome">Welcome</ion-label>
+          <ion-label class="username">Agent</ion-label>
+      </div>
+      <div class="user_back" [style.backgroundImage]="'url(assets/iron2.jpg)'">
+      </div>
+  </div>
+
+  <div class="content_div">
+    <ion-label class="hello_lbl">Hello,Agent Do Whatever You Want To Do</ion-label>
+
+    <ion-grid [fixed]="true">
+      <ion-row>
+        <ion-col><ion-card  class="mycard" routerLink="/add-cargo">
+          <ion-card-header>
+            <ion-card-title class="mytitle"><ion-icon name="add-outline"></ion-icon></ion-card-title>
+            <ion-card-subtitle class="mysub">Add Cargo</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card></ion-col>
+
+        <ion-col><ion-card  class="mycard" routerLink="/add-company">
+          <ion-card-header>
+            <ion-card-title class="mytitle"><ion-icon name="business-outline"></ion-icon></ion-card-title>
+            <ion-card-subtitle class="mysub">Add Company</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card></ion-col>
+
+      </ion-row>
+
+      <ion-row>
+        <ion-col><ion-card  class="mycard" routerLink="/display-cargo">
+          <ion-card-header>
+            <ion-card-title class="mytitle"><ion-icon name="eye-outline"></ion-icon></ion-card-title>
+            <ion-card-subtitle class="mysub">Manage Cargo</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card></ion-col>
+
+        <ion-col><ion-card  class="mycard" routerLink="/myuser">
+          <ion-card-header>
+            <ion-card-title class="mytitle"><ion-icon name="person-outline"></ion-icon></ion-card-title>
+            <ion-card-subtitle class="mysub">View User</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card></ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card  class="mycard">
+            <ion-card-header>
+              <ion-card-title class="mytitle" (click)="presentAlert()"><ion-icon name="log-out-outline"></ion-icon></ion-card-title>
+              <ion-card-subtitle class="mysub">Logout</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+          <!-- <ion-card  class="mycard" routerLink="/display">
+          <ion-card-header>
+            <ion-card-title class="mytitle"><ion-icon name="happy-outline"></ion-icon></ion-card-title>
+            <ion-card-subtitle class="mysub">View Feedback</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card> -->
+      </ion-col>
+
+        <ion-col></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</div>
+</ion-content>

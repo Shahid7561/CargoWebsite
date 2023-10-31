@@ -1,0 +1,102 @@
+ion-label{
+    font-size: 25px;
+}
+
+.bg-image{
+    --background: url('../../assets/railway.jpg') no-repeat center/cover fixed;
+  }
+  
+  
+  
+  .overlays{
+   // background: #0000008a;
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  
+  }
+  
+  .container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    
+  }
+  
+  span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+  }
+  
+  header{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    font-family: sans-serif;
+  }
+  
+  .input-field{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ion-input{
+    height: 45px;
+    width:320px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    background:rgba(0,0,0,0.6);
+    //background: black;
+  }
+  
+  .logos{
+    width: 150px;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+  
+  
+  
+  ion-input.custom {
+    --placeholder-color: #ddd;
+    --placeholder-opacity: .9;
+  }
+  
+  .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 10px;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  
+  ion-icon{
+    margin-left: 10px;
+  }
+  
+  

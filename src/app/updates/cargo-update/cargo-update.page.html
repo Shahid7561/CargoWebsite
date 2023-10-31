@@ -1,0 +1,128 @@
+<ion-content>
+  <div class="mys">
+    <div class="container">
+      <header>Update Cargo Details</header>
+
+      <form [formGroup]="form" (submit)="onSubmit(form)">
+        <div class="form first">
+          <div class="mysearch">
+            <ion-searchbar show-clear-button="always" placeholder="Select Sender Company"
+              formControlName="senderCompany"></ion-searchbar>
+          </div>
+          <div class="mysearch">
+            <ion-searchbar show-clear-button="always" placeholder="Select Receiver Company"
+              formControlName="receiverCompany"></ion-searchbar>
+          </div>
+          <div class="details personal">
+
+            <div class="fields">
+
+
+              <div class="input-field">
+                <label>Id</label>
+                <input type="text" placeholder="Enter Invoice No" formControlName="_id" readonly>
+              </div>
+              <div class="input-field">
+                <label>From</label>
+                <input type="text" placeholder="Source To" formControlName="From">
+              </div>
+
+              <div class="input-field">
+                <label>To</label>
+                <input type="text" placeholder="Destination" formControlName="To">
+              </div>
+
+              <div class="input-field">
+                <label>Train Number</label>
+                <input type="text" placeholder="Train Number" formControlName="trainNo">
+              </div>
+
+              <div class="input-field">
+                <label>No Of Articles</label>
+                <input type="text" placeholder="Enter No Of Articles" formControlName="noOfArticles">
+              </div>
+
+              <div class="input-field">
+                <label>Packing Mode</label>
+                <input type="text" placeholder="Enter Packing Mode" formControlName="packingMode">
+              </div>
+
+              <div class="input-field">
+                <label>Description Of Goods</label>
+                <input type="text" placeholder="Enter Description Of Goods" formControlName="Description">
+              </div>
+
+              <div class="input-field">
+                <label>Door Delivery</label>
+                <input type="text" placeholder="Enter Door Delivery" formControlName="doorDelivery">
+              </div>
+
+              <div class="input-field">
+                <label>Date</label>
+                <input type="date" placeholder="" formControlName="Date">
+              </div>
+
+
+              <div class="input-field">
+                <label>Payment Mode</label>
+                <ion-list>
+                  <ion-item>
+                    <ion-select interface="popover" placeholder="Select Payment Mode" formControlName="paymentMode">
+                      <ion-select-option value="Not Paid">Not Paid</ion-select-option>
+                      <ion-select-option value="Paid after delivery">Paid after delivery</ion-select-option>
+                      <ion-select-option value="Paid">Paid</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+              </div>
+
+              <div class="input-field">
+                <label>Cargo Type</label>
+                <ion-list>
+                  <ion-item>
+                    <ion-select interface="popover" placeholder="Select Cargo Type" formControlName="cargoType">
+                      <ion-select-option value="Dry Bulk Cargo">Dry Bulk Cargo</ion-select-option>
+                      <ion-select-option value="Liquid Bulk Cargo">Liquid Bulk Cargo</ion-select-option>
+                      <ion-select-option value="Containerized Cargo">Containerized Cargo</ion-select-option>
+                      <ion-select-option value="Hazardous Cargo">Hazardous Cargo</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+              </div>
+
+              <div class="input-field">
+                <label>Status</label>
+                <ion-list>
+                  <ion-item>
+                    <ion-select interface="popover" placeholder="Select Status" formControlName="Status">
+                      <ion-select-option value="Delivered">Delivered</ion-select-option>
+                      <ion-select-option value="Not Delivered">Not Delivered</ion-select-option>
+                      <ion-select-option value="Pending">Pending</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+
+
+          <div class="button">
+            <input type="submit" value="Submit">
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <!--<script src="script.js"></script>-->
+
+  </div>
+  <!-- </body> -->
+
+
+</ion-content>

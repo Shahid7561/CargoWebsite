@@ -1,0 +1,49 @@
+<ion-content>
+
+  <body>
+    <div class="container">
+      <div class="title">Update Agent Details</div>
+      <div class="content">
+        <form [formGroup]="form" (submit)="onSubmit(form)">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input type="text" placeholder="Enter your name" formControlName="Username" readonly>
+            </div>
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter your name" formControlName="fullName">
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" placeholder="Enter your email" formControlName="Email">
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text" placeholder="Enter your Number" formControlName="phoneNumber">
+            </div>
+            <div class="input-box">
+              <span class="details">State</span>
+              <input type="text" placeholder="Enter your State" formControlName="State">
+            </div>
+            <div class="input-box">
+              <span class="details">City</span>
+              <input type="text" placeholder="Enter your City" formControlName="City">
+            </div>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <ion-textarea class="myarea" placeholder="Enter Your Address"
+              formControlName="officeAddress"></ion-textarea>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </body>
+
+
+</ion-content>

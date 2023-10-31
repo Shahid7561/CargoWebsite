@@ -1,0 +1,46 @@
+<ion-content>
+
+  <body>
+    <div class="container">
+      <div class="title">Update User Details</div>
+      <div class="content">
+        <form [formGroup]="form" (submit)="onSubmit(form)">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter your name" formControlName="Fullname">
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" placeholder="Enter your email" formControlName="Email" readonly>
+            </div>
+            <div class="input-box">
+              <span class="details">Date Of Birth</span>
+              <input type="date" formControlName="DOB">
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text" placeholder="Enter your Number" formControlName="Phone">
+            </div>
+            <div class="input-box">
+              <span class="details">Gender</span>
+              <select formControlName="Gender">
+                <option>Select gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+              </select>
+            </div>
+
+          </div>
+          <div class="button">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </body>
+
+
+</ion-content>

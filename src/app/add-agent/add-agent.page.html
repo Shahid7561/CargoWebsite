@@ -1,0 +1,62 @@
+
+<ion-content>
+
+<body>
+  <div class="container">
+    <div class="title">Add Agent Details</div>
+    <div class="content">
+      <form [formGroup]="form" (submit)="add(form)">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter Agent Name" required  formControlName="fullName">
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter Agent Email" required formControlName="Email">
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter Agent Username" required formControlName="Username">
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter Agent Password" required formControlName="Password">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter Agent Number" required formControlName="phoneNumber">
+          </div>
+          <div class="input-box">
+            <span class="details">Gender</span>
+            <select required formControlName="Gender">
+              <option disabled selected>Select gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+          </select>
+          </div>
+          <div class="input-box">
+            <span class="details">State</span>
+            <input type="text" placeholder="Enter Agent State" required formControlName="State">
+          </div>
+          <div class="input-box">
+            <span class="details">City</span>
+            <input type="text" placeholder="Enter Agent City" required formControlName="City">
+          </div>
+        </div>
+        <div class="input-box">
+          <span class="details">Address</span>
+          <ion-textarea class="myarea" placeholder="Enter Agent Address" formControlName="officeAddress"></ion-textarea>
+        </div>
+        <div class="button">
+          <input type="submit" value="Add Agent">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+
+</ion-content>

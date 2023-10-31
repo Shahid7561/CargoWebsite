@@ -1,0 +1,39 @@
+<ion-content class="bg-image">
+  <div class="overlays">
+    <div class="logos">
+      <img src="../../assets/r4.png">
+    </div>
+
+    <div class="box">
+
+      <div class="container">
+        <div class="top-header">
+          <header>Login</header>
+        </div>
+        <form [formGroup]="form" (submit)="login(form)">
+          <div class="input-field">
+            <ion-input formControlName="Username" class="custom" type="email" placeholder="Your username"><ion-icon
+                name="mail-outline"></ion-icon></ion-input>
+          </div>
+
+          <div class="input-field">
+            <ion-input formControlName="Password" class="custom" type="password" placeholder="Password"><ion-icon
+                name="lock-closed-outline"></ion-icon></ion-input>
+          </div>
+
+          <div class="input-field">
+            <ion-button color="light" shape="round" type="submit">Login</ion-button>
+          </div>
+
+          <div class="bottom">
+            <a routerLink="/change-password" class="forgot-password-link">Forgot Password?</a>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>

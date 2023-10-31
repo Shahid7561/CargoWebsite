@@ -1,0 +1,163 @@
+<ion-header class="myhead">
+  <ion-toolbar>
+    <ion-title class="tit">Cargo Management</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <div class="employees">
+
+    <div class="row mt-5 myblock">
+      <div class="col text-center">
+        <h1 class="mycolor">Cargo Management</h1>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <div class="container-fluid g-0 p-2 mycss" *ngFor="let data of datauser">
+
+
+
+          <div class="row g-0">
+            <div class="col ps-2">
+
+              <div class="row g-0">
+
+                <div class="col-md-10 text-center myname">
+                </div>
+                <div class="col-md-10 text-center fs-5 fst-italic text-secondary">
+                  <span class="mytur">Cargo Details</span>
+
+                </div>
+
+
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-success"
+                      routerLink="/cargo-update/{{data._id}}">Edit</button>
+                    <button type="button" class="btn btn-outline-danger" (click)="deleteCargo(data._id)">Delete</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row g-0 mt-3">
+
+                <div class="col-md">
+
+                  <table class="table table-hover mx-auto">
+                    <tbody>
+                      <tr>
+                        <td class="jis">Invoice No</td>
+                        <td>{{data.invoiceNo}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Packing Mode</td>
+                        <td>{{data.packingMode}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Sender Company</td>
+                        <td>{{data.senderCompany}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Actual Weight</td>
+                        <td>{{data.actualWeight}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">Double Weight</td>
+                        <td>{{data.doubleWeight}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Charge Weight</td>
+                        <td>{{data.chargeWeight}}</td>
+                      </tr>
+
+                      <tr>
+                        <td class="jis">Freight</td>
+                        <td>{{data.Freight}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Grand Total</td>
+                        <td>{{data.grandTotal}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Status</td>
+                        <td>{{data.Status}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Cargo Type</td>
+                        <td>{{data.cargoType}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+                <div class="col">
+
+                  <table class="table table-hover mx-auto">
+                    <tbody>
+                      <tr>
+                        <td class="jis">From</td>
+                        <td>{{data.From}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">To</td>
+                        <td>{{data.To}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Receiver Company</td>
+                        <td>{{data.receiverCompany}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Email</td>
+                        <td>{{data.Email}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Train Number</td>
+                        <td>{{data.trainNo}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Description</td>
+                        <td>{{data.Description}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Door Delivery</td>
+                        <td>{{data.doorDelivery}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Ewaybill No</td>
+                        <td>{{data.ewayBillNo}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Cargo Date</td>
+                        <td>{{data.Date}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Payment Mode</td>
+                        <td>{{data.paymentMode}}</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</ion-content>

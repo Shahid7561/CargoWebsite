@@ -1,0 +1,239 @@
+<ion-content>
+  <div class="mys">
+    <!-- <body> -->
+    <!-- <header>Add Cargo Details</header> -->
+    <div class="container">
+      <header>Add Cargo Details</header>
+
+      <form [formGroup]="form" (ngSubmit)="add(form)">
+        <div class="form first">
+
+          <div class="input-field">
+            <label>Sender Company Name</label>
+            <ion-list>
+              <ion-item>
+                <ion-select interface="popover" placeholder="Select Sender Company Name"
+                  formControlName="senderCompany">
+                  <ion-select-option *ngFor="let data of datauser"
+                    value="{{data.companyName}}">{{data.companyName}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-list>
+          </div>
+          <div class="input-field">
+            <label>Receiver Company Name</label>
+            <ion-list>
+              <ion-item>
+                <ion-select interface="popover" placeholder="Select Receiver Company Name"
+                  formControlName="receiverCompany">
+                  <ion-select-option *ngFor="let data of datauser"
+                    value="{{data.companyName}}">{{data.companyName}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-list>
+          </div>
+          <div class="details personal">
+
+            <div class="fields">
+
+              <div class="input-field">
+                <label>Invoice No</label>
+                <input type="text" placeholder="Enter Invoice No" formControlName="invoiceNo" required>
+              </div>
+
+              <div class="input-field">
+                <label>From</label>
+                <input type="text" placeholder="Source To" formControlName="From" required>
+              </div>
+
+              <div class="input-field">
+                <label>To</label>
+                <input type="text" placeholder="Destination" formControlName="To" required>
+              </div>
+
+              <div class="input-field">
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email Address" formControlName="Email" required>
+              </div>
+
+              <div class="input-field">
+                <label>Train Number</label>
+                <input type="text" placeholder="Enter Train Number" formControlName="trainNo">
+              </div>
+
+              <div class="input-field">
+                <label>No Of Articles</label>
+                <input type="text" placeholder="Enter No Of Articles" formControlName="noOfArticles" required>
+              </div>
+
+              <div class="input-field">
+                <label>Packing Mode</label>
+                <input type="text" placeholder="Enter Packing Mode" formControlName="packingMode" required>
+              </div>
+
+              <div class="input-field">
+                <label>Description Of Goods</label>
+                <input type="text" placeholder="Enter Description Of Goods" formControlName="Description" required>
+              </div>
+
+              <div class="input-field">
+                <label>Actual Weight</label>
+                <input type="text" placeholder="Enter Actual Weight" formControlName="actualWeight" required>
+              </div>
+
+              <div class="input-field">
+                <label>Double Weight</label>
+                <input type="text" placeholder="Enter Double Weight" formControlName="doubleWeight" required>
+              </div>
+
+              <div class="input-field">
+                <label>Charge Weight</label>
+                <input type="text" placeholder="Enter Charge Weight" formControlName="chargeWeight" required>
+              </div>
+
+              <div class="input-field">
+                <label>Ewaybill No</label>
+                <input type="text" placeholder="Enter Ewaybill No" formControlName="ewayBillNo" required>
+              </div>
+
+              <div class="input-field">
+                <label>Rate Per KG</label>
+                <input type="text" placeholder="Enter Rate" formControlName="Rate" required>
+              </div>
+
+              <div class="input-field">
+                <label>Freight</label>
+                <input type="text" placeholder="0" formControlName="Freight" required>
+              </div>
+
+              <div class="input-field">
+                <label>Handling</label>
+                <input type="text" placeholder="Enter Handling" formControlName="Handling" required>
+              </div>
+
+              <div class="input-field">
+                <label>Gate Pass</label>
+                <input type="text" placeholder="Enter Gate Pass" formControlName="gatePass" required>
+              </div>
+
+              <div class="input-field">
+                <label>Door Delivery</label>
+                <input type="text" placeholder="Enter Door Delivery" formControlName="doorDelivery" required>
+              </div>
+
+              <div class="input-field">
+                <label>CGST</label>
+                <ion-list>
+                  <ion-item>
+                    <ion-select interface="popover" placeholder="Select CGST" formControlName="CGST">
+                      <ion-select-option value="3%">3%</ion-select-option>
+                      <ion-select-option value="5%">5%</ion-select-option>
+                      <ion-select-option value="9%">9%</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+              </div>
+
+              <div class="input-field">
+                <label>SGST</label>
+                <ion-list>
+                  <ion-item>
+                    <ion-select interface="popover" placeholder="Select SGST" formControlName="SGST">
+                      <ion-select-option value="3%">3%</ion-select-option>
+                      <ion-select-option value="5%">5%</ion-select-option>
+                      <ion-select-option value="9%">9%</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+              </div>
+
+              <div class="input-field">
+                <label>IGST</label>
+                <ion-list>
+                  <ion-item>
+                    <ion-select interface="popover" placeholder="Select IGST" formControlName="IGST">
+                      <ion-select-option value="3%">3%</ion-select-option>
+                      <ion-select-option value="5%">5%</ion-select-option>
+                      <ion-select-option value="9%">9%</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+              </div>
+
+              <div class="input-field">
+                <label>Grand Total</label>
+                <input type="text" placeholder="0" formControlName="grandTotal" required>
+              </div>
+
+              <div class="input-field">
+                <label>Value</label>
+                <input type="text" placeholder="" formControlName="Value" required>
+              </div>
+
+              <div class="input-field">
+                <label>Date</label>
+                <input type="date" placeholder="" formControlName="Date" required>
+              </div>
+
+
+
+              <div class="input-field">
+                <label>Payment Mode</label>
+                <ion-list>
+                  <ion-item>
+                    <ion-select interface="popover" placeholder="Select Payment Mode" formControlName="paymentMode">
+                      <ion-select-option value="Not Paid">Not Paid</ion-select-option>
+                      <ion-select-option value="Paid after delivery">Paid after delivery</ion-select-option>
+                      <ion-select-option value="Paid">Paid</ion-select-option>
+                    </ion-select>
+
+                  </ion-item>
+                </ion-list>
+              </div>
+              <div class="input-field">
+                <label>Cargo Type</label>
+                <ion-list>
+                  <ion-item>
+                    <ion-select interface="popover" placeholder="Select Cargo Type" formControlName="cargoType">
+                      <ion-select-option value="Dry Bulk Cargo">Dry Bulk Cargo</ion-select-option>
+                      <ion-select-option value="Liquid Bulk Cargo">Liquid Bulk Cargo</ion-select-option>
+                      <ion-select-option value="Containerized Cargo">Containerized Cargo</ion-select-option>
+                      <ion-select-option value="Hazardous Cargo">Hazardous Cargo</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+              </div>
+
+              <div class="input-field">
+                <label>Status</label>
+                <ion-list>
+                  <ion-item>
+                    <ion-select interface="popover" placeholder="Select Status" formControlName="Status">
+                      <ion-select-option value="Delivered">Delivered</ion-select-option>
+                      <ion-select-option value="Not Delivered">Not Delivered</ion-select-option>
+                      <ion-select-option value="Pending">Pending</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+
+          <div class="button">
+            <input type="submit" value="Add Cargo">
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <!-- </body> -->
+
+
+</ion-content>

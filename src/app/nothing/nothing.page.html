@@ -1,0 +1,51 @@
+<ion-content>
+  <div class="main_content_div">
+   <ion-buttons slot="start" class="back_btn">
+     <ion-back-button class="btn" text="Back" icon="chevron-back-sharp"  defaultHref="home"></ion-back-button>
+   </ion-buttons>
+   <ion-buttons slot="start" class="back_btn2">
+    <ion-button class="btn" routerLink="/profile">SAVE</ion-button>
+  </ion-buttons>
+
+      <div class="user_div">
+          <div class="user_back">
+           <ion-icon name="person-circle-sharp"></ion-icon>
+          </div>
+
+      </div>
+
+      <div class="content_div">
+        <form [formGroup]="form" (ngSubmit)="update(form)">
+          <ion-item class="myitem">
+            <ion-label class="mylabel" position="stacked">Fullname</ion-label>
+            <ion-input type="text"  formControlName="Fullname"></ion-input>
+          </ion-item>
+
+          <ion-item class="myitem">
+            <ion-label class="mylabel" position="stacked">Email</ion-label>
+            <ion-input type="email" formControlName="Email"></ion-input>
+          </ion-item>
+
+          <ion-item class="myitem">
+            <ion-label class="mylabel" class="mylabel" position="stacked">Number</ion-label>
+            <ion-input type="tel" formControlName="Phone"></ion-input>
+          </ion-item>
+
+          <ion-item class="myitem">
+            <ion-label class="mylabel" class="mylabel" position="stacked" >Password</ion-label>
+            <ion-input type="password" formControlName="Password"></ion-input>
+          </ion-item>
+
+          <ion-item class="myitem">
+            <ion-label class="mylabel" class="mylabel" position="stacked">Confirm Password</ion-label>
+            <ion-input type="password" formControlName="ConfirmPassword"></ion-input>
+          </ion-item>
+
+          <ion-item class="myitem">
+            <ion-button type="submit">Submit</ion-button>
+          </ion-item>
+
+        </form>
+      </div>
+  </div>
+</ion-content>

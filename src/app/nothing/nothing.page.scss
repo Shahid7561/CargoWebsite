@@ -1,0 +1,136 @@
+.main_content_div{
+  width: 100%;
+  .back_btn{
+      position: absolute;
+      top: 20px;
+      left: 5px;
+    .btn{
+      font-size: 18px;
+    }
+
+  }
+
+  .back_btn2{
+    position: absolute;
+    top: 20px;
+    right: 5px;
+  .btn{
+    font-size: 18px;
+  }
+
+}
+
+
+  .t1{
+      position: absolute;
+      text-align: center;
+      padding-top: 75px;
+      right: 135px;
+      margin-top: 10px;
+      font-weight: 600;
+      font-size: 20px;
+  }
+  .user_div{
+      padding: 20px;
+      width: 100%;
+      height: 260px;
+      background: linear-gradient(to right, #8e2de2, #2f80ed);
+      //background: linear-gradient(to right, #045de9, #09c6f9);
+      //background: #fa578e;
+      //background: #667eea;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+
+
+  .first_div{
+      padding-top: 75px;
+      padding-right: -10px;
+
+      .username{
+          font-size: 25px;
+          color: black;
+          font-weight: 600;
+
+      }
+  }
+  .user_back{
+      height: 100px;
+      width: 100px;
+      padding-left: 140px;
+      //margin-top: -15px;
+
+  }
+  ion-icon{
+      // height: 100px;
+      // width: 120px;
+      font-size: 100px;
+
+  }
+}
+.content_div{
+  background: white;
+  width: 100%;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  margin-top: -90px;
+  padding: 20px;
+  padding-top: 30px;
+
+  .test_detail{
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+      padding: 10px;
+      ion-grid{
+          padding: 0px;
+          ion-col{
+              padding: 10px;
+          }
+          .flex_div{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+
+          }
+      }
+  }
+  .last_div{
+      display: flex;
+      justify-content: space-between;
+      border-radius: 5px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+      margin-top: 20px;
+      padding: 15px;
+      .usr{
+          font-size: 20px;
+      }
+
+  }
+}
+}
+
+.btn{
+  //color: #00acee;
+  color:black;
+  //color:#1B6DFF;
+  font-size: 18px;
+}
+.tit{
+  margin-left: 40px;
+}
+
+.myform{
+  margin-top: 20px;
+}
+
+.mylabel{
+  font-size: 23px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  //margin-bottom: 10px;
+}
+
+.myitem{
+  margin-bottom: 10px;
+}

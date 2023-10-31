@@ -1,0 +1,120 @@
+<ion-header class="myhead">
+  <ion-toolbar>
+    <ion-title class="tit">User View</ion-title>
+    <!-- <ion-buttons slot="start">
+      <ion-back-button class="btn" text="Back" icon="chevron-back-sharp"  defaultHref="agent-dash"></ion-back-button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="employees">
+
+    <div class="row mt-5 myblock">
+      <div class="col text-center">
+        <h1 class="mycolor">User Management</h1>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <div class="container-fluid g-0 p-2 mycss" *ngFor="let data of datauser">
+
+
+
+          <div class="row g-0">
+
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+              <img src="../../assets/iron2.jpg" alt="Profile Image" class="profile">
+            </div>
+
+            <div class="col ps-2">
+
+              <div class="row g-0">
+
+                <div class="col-md-10 text-center myname">
+                  <span class="name">{{data.Fullname}}</span>
+
+                </div>
+                <div class="col-md-10 text-center fs-5 fst-italic text-secondary">
+                  <span>Personal Details</span>
+
+                </div>
+
+
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                  <!-- <div class="btn-group" role="group">
+                                  <button type="button" class="btn btn-outline-success"
+                                      >Edit</button>
+                                  <button type="button" class="btn btn-outline-danger"
+                                      >Delete</button>
+                              </div> -->
+                </div>
+
+              </div>
+
+              <div class="row g-0 mt-3">
+
+                <div class="col-md">
+
+                  <table class="table table-hover mx-auto">
+                    <!-- <thead class="text-center fs-5 fst-italic text-secondary">
+                                      <tr>
+                                          <td colspan="2">Personal Details</td>
+                                      </tr>
+                                  </thead> -->
+                    <tbody>
+                      <tr>
+                        <td class="jis">Name</td>
+                        <td>{{data.Fullname}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Phone</td>
+                        <td>{{data.Phone}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Date of Birth</td>
+                        <td>{{data.DOB}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+                <div class="col">
+
+                  <table class="table table-hover mx-auto">
+                    <!-- <thead class="text-center fs-5 fst-italic text-secondary">
+                                      <tr>
+                                          <td colspan="2">Personal Details</td>
+                                      </tr>
+                                  </thead> -->
+                    <tbody>
+                      <tr>
+                        <td class="jis">Email</td>
+                        <td>{{data.Email}}</td>
+                      </tr>
+                      <tr>
+                        <td class="jis">Gender</td>
+                        <td>{{data.Gender}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</ion-content>
